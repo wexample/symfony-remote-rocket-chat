@@ -106,6 +106,11 @@ class RocketChatUserAdapter implements DisablableRemoteAdapterInterface, Searcha
         $this->client->deleteUser($id);
     }
 
+    public function isDisabled(RemoteItem $item): bool
+    {
+        return false === $item->get(self::FIELD_ACTIVE);
+    }
+
     public function disable(string $id): void
     {
         $this->client->setUserActiveStatus($id, false);
