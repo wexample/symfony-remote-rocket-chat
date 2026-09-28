@@ -1,7 +1,9 @@
 domain: symfony-remote-rocket-chat.wex
+git:
+  publication_strategy: main_push
 global:
   name: symfony-remote-rocket-chat
   type: php-package
-  version: 1.0.0
+  version: 1.0.1
 wex:
   version: 6.0.136
