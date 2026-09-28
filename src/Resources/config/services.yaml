@@ -1,0 +1,7 @@
+# The client itself is declared by the application under wexample_symfony_remote.clients;
+# this bundle will register the data-sync adapters built on it.
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false

@@ -1,0 +1,3 @@
+`symfony-remote-rocket-chat` is a Rocket.Chat REST client (API v1) for Symfony, built on `wexample/php-api` and declared through `symfony-remote`: users (paginated listing, read, create, update, deactivate, delete), private groups (listing, create, rename, archive, delete), channels (listing) and messages (`postMessage` to a room, `#channel` or `@username`). Refusals raise a `RocketChatException` carrying the reason Rocket.Chat gave; `isTransient()` tells an outage from a refusal.
+
+Answers are returned as Rocket.Chat sends them. Mapping them to an application's model — its users, its projects — is the job of the `symfony-data-sync` adapters this package will add.

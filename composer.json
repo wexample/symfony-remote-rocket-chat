@@ -1,11 +1,46 @@
 {
   "name": "wexample/symfony-remote-rocket-chat",
-  "version": "1.0.1",
+  "description": "Rocket.Chat REST client for Symfony, built on wexample/php-api and declared as a symfony-remote client",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.1",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyRemoteRocketChat\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wexample\\SymfonyRemoteRocketChat\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "weeger",
+      "email": "romain.weeger@wexample.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "wexample/php-api": "*",
+    "wexample/symfony-helpers": "*",
+    "wexample/symfony-remote": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "extra": {
+    "install": {
+      "bundle_env": "all"
     }
   }
 }
