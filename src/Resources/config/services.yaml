@@ -1,7 +1,9 @@
-# The client itself is declared by the application under wexample_symfony_remote.clients;
-# this bundle will register the data-sync adapters built on it.
+# RocketChatClient itself is declared by the application under wexample_symfony_remote.clients.
 services:
     _defaults:
         autowire: true
         autoconfigure: true
         public: false
+
+    Wexample\SymfonyRemoteRocketChat\Service\:
+        resource: '../../Service/'

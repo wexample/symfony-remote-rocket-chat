@@ -77,6 +77,18 @@ class RocketChatClient extends AbstractApiClient
     }
 
     /**
+     * Rocket.Chat stores addresses lowercased: the address is lowercased too.
+     *
+     * @return array<string, mixed>[] the users holding the address (one, unless the server allows duplicates)
+     */
+    public function findUsersByEmail(string $email): array
+    {
+        return $this->call(HttpMethod::GET, 'users.list', ['query' => [
+            'query' => json_encode(['emails.address' => mb_strtolower(trim($email))], JSON_THROW_ON_ERROR),
+        ]])['users'] ?? [];
+    }
+
+    /**
      * Pass a random temporary password: Rocket.Chat asks the user to change
      * it at first login unless told otherwise. Never pass a password hash.
      *
