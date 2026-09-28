@@ -1,0 +1,11 @@
+{
+  "name": "wexample/symfony-remote-rocket-chat",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Wexample\\SymfonyRemoteRocketChat\\": "src/"
+    }
+  }
+}
