@@ -9,11 +9,12 @@ use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
-use Wexample\SymfonyRemote\Class\ApiClientRemote;
-use Wexample\SymfonyRemote\Class\ClientDefinition;
-use Wexample\SymfonyRemote\Enum\RemoteState;
-use Wexample\SymfonyRemote\Service\ApiClientFactory;
-use Wexample\SymfonyRemote\Service\RemoteRegistry;
+use Wexample\PhpApi\Common\ClientOptions;
+use Wexample\PhpRemote\Class\ApiClientFactory;
+use Wexample\PhpRemote\Class\ApiClientRemote;
+use Wexample\PhpRemote\Class\ClientDefinition;
+use Wexample\PhpRemote\Class\RemoteRegistry;
+use Wexample\PhpRemote\Enum\RemoteState;
 use Wexample\SymfonyRemoteRocketChat\Class\RocketChatClient;
 use Wexample\SymfonyRemoteRocketChat\Exception\RocketChatException;
 
@@ -142,7 +143,7 @@ class RocketChatClientTest extends TestCase
             apiKey: 'token',
             apiKeyRequired: true,
             headers: [RocketChatClient::HEADER_USER_ID => 'bot'],
-            options: ['timeout' => 10.0, 'connect_timeout' => 0.0, 'retries' => 0, 'retry_delay' => 1.0, 'rate_limit_delay' => 0.0],
+            options: new ClientOptions(timeout: 10.0),
         );
         $stack = HandlerStack::create($this->handler);
         $stack->push(Middleware::history($this->history));

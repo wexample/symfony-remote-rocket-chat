@@ -22,7 +22,7 @@
   ],
   "require": {
     "php": ">=8.5",
-    "wexample/php-api": "*",
+    "wexample/php-api": ">=5.0.0",
     "wexample/symfony-helpers": "*",
     "wexample/symfony-remote": "*",
     "wexample/symfony-data-sync": "*"
