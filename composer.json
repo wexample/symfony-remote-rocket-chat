@@ -3,7 +3,7 @@
   "description": "Rocket.Chat REST client for Symfony, built on wexample/php-api and declared as a symfony-remote client",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyRemoteRocketChat\\": "src/"
@@ -23,9 +23,9 @@
   "require": {
     "php": ">=8.5",
     "wexample/php-api": ">=5.0.0",
-    "wexample/symfony-helpers": "*",
-    "wexample/symfony-remote": "*",
-    "wexample/symfony-data-sync": "*"
+    "wexample/symfony-helpers": ">=12.0.0",
+    "wexample/symfony-remote": ">=2.0.0",
+    "wexample/symfony-data-sync": ">=3.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "*"
