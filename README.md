@@ -1,6 +1,6 @@
 # symfony-remote-rocket-chat
 
-Version: 2.0.2
+Version: 2.0.3
 
 ```php
 public function __construct(private RocketChatClient $rocketChat) {}
@@ -96,7 +96,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 
 - php: >=8.5
 - wexample/php-api: >=5.0.0
-- wexample/symfony-helpers: >=14.0.0
+- wexample/symfony-helpers: >=15.0.0
 - wexample/symfony-remote: >=2.0.0
 - wexample/symfony-data-sync: >=3.0.0
 
