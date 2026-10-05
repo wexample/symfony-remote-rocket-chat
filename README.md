@@ -1,6 +1,6 @@
 # symfony-remote-rocket-chat
 
-Version: 2.0.3
+Version: 2.0.4
 
 ```php
 public function __construct(private RocketChatClient $rocketChat) {}

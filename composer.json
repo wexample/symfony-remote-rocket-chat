@@ -3,7 +3,7 @@
   "description": "Rocket.Chat REST client for Symfony, built on wexample/php-api and declared as a symfony-remote client",
   "type": "library",
   "license": "MIT",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyRemoteRocketChat\\": "src/"
