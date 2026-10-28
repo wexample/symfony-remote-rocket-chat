@@ -36,3 +36,4 @@ coverage*.lcov
 .php-cs-fixer.cache
 .scannerwork
 /vendor
+/node_modules

@@ -4,7 +4,7 @@ git:
 global:
   name: symfony-remote-rocket-chat
   type: php-package
-  version: 2.0.8
+  version: 2.0.9
 wex:
-  migration: 2
-  version: 6.0.150
+  migration: 1
+  version: 6.0.179
