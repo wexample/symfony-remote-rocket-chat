@@ -1,6 +1,6 @@
 # symfony-remote-rocket-chat
 
-Version: 2.0.13
+Version: 2.0.14
 
 Rocket.Chat REST client for Symfony, built on wexample/php-api and declared as a symfony-remote client
 
